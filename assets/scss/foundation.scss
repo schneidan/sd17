@@ -20,7 +20,7 @@
 
 // Third-party libraries
 @import 'font-awesome';
-@import 'motion-ui';
+// @import 'motion-ui';
 
 // Foundation global styles
 @include foundation-global-styles;
@@ -31,10 +31,10 @@
 @include foundation-typography;
 @include foundation-forms;
 @include foundation-button;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
-@include foundation-breadcrumbs;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
 @include foundation-card;
@@ -48,12 +48,12 @@
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-off-canvas;
-@include foundation-orbit;
+// @include foundation-orbit;
 @include foundation-pagination;
-@include foundation-progress-bar;
-@include foundation-slider;
+// @include foundation-progress-bar;
+// @include foundation-slider;
 @include foundation-sticky;
-@include foundation-reveal;
+// @include foundation-reveal;
 @include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;
@@ -66,13 +66,16 @@
 // @include foundation-flex-classes;
 
 // Motion UI
-@include motion-ui-transitions;
-@include motion-ui-animations;
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
 
 /*
   My custom styles:
   Add your scss files below to structure your project styles
 */
+
+// SD17
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,600,600i|Josefin+Slab:400,400i,700,700i);
 
 // Modules
 @import "modules/navigation";

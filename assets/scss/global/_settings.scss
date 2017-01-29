@@ -43,12 +43,18 @@
 
 @import '../../components/foundation-sites/scss/util/util';
 
+
+// 0. Global Fonts
+// ---------------
+$serif: 'Josefin Slab', Georgia, serif;   
+$sans: 'Josefin Sans', 'Arial Narrow', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+$global-font-size: 130%;
 $global-width: rem-calc(1200);
-$global-lineheight: 1.5;
+$global-lineheight: 1.6;
 $foundation-palette: (
   primary: #1779ba,
   secondary: #767676,
@@ -61,15 +67,15 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$outer-space: #2c3840;
+$outer-space: $white;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$body-font-family: $sans;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-normal: 300;
+$global-weight-bold: 600;
 $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
@@ -105,10 +111,10 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-family: $serif;
+$header-font-weight: 400;
 $header-font-style: normal;
-$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: 'Courier New', 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
@@ -619,3 +625,4 @@ $topbar-submenu-background: $outer-space;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
+

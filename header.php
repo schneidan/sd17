@@ -35,20 +35,24 @@
 			</div>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-			<div class="top-bar-left">
-				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-				</ul>
-			</div>
-			<div class="top-bar-right">
-				<?php foundationpress_top_bar_r(); ?>
+		<div class="top-bar-container" data-sticky-container>
+			<div class="sticky" data-sticky data-options="anchor-top: page; marginTop: 0; stickyOn: small;" style="width:100%; z-index:2">
+				<nav id="site-navigation" class="top-bar" data-topbar role="navigation">
+					<div class="top-bar-left show-for-medium-up">
+						<ul class="menu">
+							<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+						</ul>
+					</div>
+					<div class="top-bar-right show-for-medium-up">
+						<?php foundationpress_top_bar_r(); ?>
 
-				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
-					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-				<?php endif; ?>
+						<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
+							<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+						<?php endif; ?>
+					</div>
+				</nav>
 			</div>
-		</nav>
+		</div>
 	</header>
 
 	<section class="container">

@@ -112,10 +112,8 @@
 }
 
 .title-bar-title a, .top-bar .menu > li:not(.menu-text) > a {
-  font-family: $header-font-family !important;
-  font-size:1rem;
+  text-transform:uppercase;
   padding-top:.7rem;
-  font-weight:300;
 }
 .top-bar .menu li.home a { 
   font-family: $header-font-family !important;
